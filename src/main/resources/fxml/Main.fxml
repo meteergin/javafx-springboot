@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.meteergin.controllers.MainController">
+	<children>
+		<VBox prefHeight="600.0" prefWidth="500.0"
+			AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0"
+			AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+			<children>
+				<HBox alignment="CENTER" VBox.vgrow="NEVER" prefHeight="100.0">
+					<children>
+						<Label text="JavaFX Spring Boot Demo Application"
+							HBox.hgrow="NEVER">
+							<font>
+								<Font name="System Bold" size="24.0" />
+							</font>
+						</Label>
+					</children>
+				</HBox>
+				<HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+					<children>
+						<Button fx:id="buttonHelloWorld" mnemonicParsing="false"
+							onAction="#buttonHelloWorldOnClick" prefHeight="50.0" prefWidth="200.0"
+							text="Say Hello" HBox.hgrow="ALWAYS" />
+					</children>
+					<VBox.margin>
+						<Insets top="10.0" />
+					</VBox.margin>
+				</HBox>
+			</children>
+		</VBox>
+	</children>
+</AnchorPane>
